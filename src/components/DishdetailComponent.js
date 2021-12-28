@@ -13,7 +13,7 @@ export class DishDetail extends Component {
                 <div key={comment.id}>
                   <ul className='list-unstyled'>
                     <li>{comment.comment}</li>
-                    <li>-- {comment.author}, {comment.date}</li>
+                    <li>-- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</li>
                   </ul>
                 </div>
               );
