@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle,Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderMenuItem ( { dish, onClick } )
+function RenderMenuItem ( { dish } )
 {
   return (
     <Card >
@@ -32,12 +32,12 @@ const Menu = ( props ) =>
         <div className='container'>
           <div className="row">
             <Breadcrumb>
-                <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                <BreadcrumbItem active>Menu</BreadcrumbItem>
+            <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+              <BreadcrumbItem active>Menu</BreadcrumbItem>
             </Breadcrumb>
             <div className="col-12">
-                <h3>Menu</h3>
-                <hr />
+              <h3>Menu</h3>
+              <hr />
             </div>                
           </div>
           <div className="row">
